@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="Smark Corba Tools"
+            visible="true"
+            id="org.smark.corba.tools.rpc.actionSet">
+         <menu
+               label="&amp;Tools"
+               id="sampleMenu">
+            <separator
+                  name="sampleGroup">
+            </separator>
+         </menu>
+         <action
+               label="&amp;IOR Info"
+               icon="icons/sample.gif"
+               class="org.smark.corba.tools.rpc.actions.IORInfoAction"
+               tooltip="IOR Info"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               id="org.smark.corba.tools.rpc.actions.IORInfoAction">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="org.smark.corba.tools.rpc.views.IORInfoView"
+            id="org.smark.corba.tools.rpc.views.IORInfoView"
+            name="IOR Info"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>

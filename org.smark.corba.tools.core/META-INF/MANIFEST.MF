@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Corba Tools Core
+Bundle-SymbolicName: org.smark.corba.tools.core
+Bundle-Version: 0.0.1
+Bundle-Activator: org.smark.corba.tools.core.Activator
+Bundle-Vendor: https://github.com/smarkm
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: org.smark.corba.tools.core
